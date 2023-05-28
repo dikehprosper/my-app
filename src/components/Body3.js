@@ -195,7 +195,7 @@ const Body3 = () => {
                             </div>
 
 
-                            <Link to="https://resplendent-biscotti-5900b2.netlify.app/">  <button className='button1'>Play Now</button></Link>
+                            <Link to="https://resplendent-biscotti-5900b2.netlify.app/" target="_blank">  <button className='button1'>Play Now</button></Link>
                             <button className='button2'>Demo</button>
                         </div></div>
                     <div className='container'> <img src={logo41} alt="Logo38" style={{ height: "126px" }} />
