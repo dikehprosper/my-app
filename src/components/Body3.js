@@ -37,6 +37,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import Marquee from "react-fast-marquee";
 import data from './data.json';
 import data1 from './data1.json';
+import { Link } from 'react-router-dom'
 
 const Body3 = () => {
 
@@ -170,8 +171,6 @@ const Body3 = () => {
                                 <RiErrorWarningFill style={{ opacity: "0.5" }} />
                                 <AiOutlineStar style={{ opacity: "0.5" }} />
                             </div>
-
-
                             <button className='button1'>Play Now</button>
                             <button className='button2'>Demo</button>
                         </div></div>
@@ -187,6 +186,7 @@ const Body3 = () => {
                             <button className='button1'>Play Now</button>
                             <button className='button2'>Demo</button>
                         </div></div>
+
                     <div className='container'> <img src={logo40} alt="Logo38" style={{ height: "126px" }} />
                         <div class="overlay" position="relative" >
                             <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", top: "0", width: "90%", padding: "5px", marginLeft: "5px", marginRight: "5px" }}>
@@ -195,7 +195,7 @@ const Body3 = () => {
                             </div>
 
 
-                            <button className='button1'>Play Now</button>
+                            <Link to="https://resplendent-biscotti-5900b2.netlify.app/">  <button className='button1'>Play Now</button></Link>
                             <button className='button2'>Demo</button>
                         </div></div>
                     <div className='container'> <img src={logo41} alt="Logo38" style={{ height: "126px" }} />
