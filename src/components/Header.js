@@ -6,7 +6,7 @@ import Header2 from "./Header2";
 
 
 
-function Header() {
+function Header({ totalBalance }) {
 
     const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
@@ -15,7 +15,7 @@ function Header() {
         <div className="App">
 
             {!isLoggedIn && <Header1 />}
-            {isLoggedIn && <Header2 />}
+            {isLoggedIn && <Header2 totalBalance={totalBalance} />}
         </div>
     );
 }

@@ -38,14 +38,16 @@ function Header1() {
         setShowPassword(!showPassword);
     };
 
-    const handleSubmit = () => {
-       
-        setShow(false)
-        dispatch(authActions.login());
-        
-    };  
-    
- 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        setTimeout(() => {
+            setShow(false)
+            dispatch(authActions.login());
+        }, 1500)
+    };
+
+
 
     function handleClick1() {
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo13 from "./images/logo13.png"
 import logo14 from "./images/logo14.png"
 import logo16 from "./images/logo16.jpg"
@@ -52,16 +52,17 @@ const Body = () => {
       
         return `${hours}:${minutes}`;
     }
-
+    const [timeString, setTimeString] = useState("")
+    
     setInterval(() => {
-        const timeString = getTime();
-        console.log(timeString); // or do something else with the time string
+        setTimeString(getTime());
+         // or do something else with the time string
     }, 1000);
 
     return (
         <div className='body'> <img src={logo13} alt="logo13" className='logo13' />
             <div style={{ position: 'relative' }}> <img src={logo14} alt="logo14" className='logo14' />
-                <div style={{fontSize: "12px", color: "#ffffff80", position: 'absolute', top:"-58px", marginLeft:"8px", padding:"6px", fontWeight: "500", background:"black"}}>{getTime()}</div></div>
+                <div style={{ fontSize: "12px", color: "#ffffff80", position: 'absolute', top: "-58px", marginLeft: "8px", padding: "6px", fontWeight: "500", background: "black" }}>{timeString}</div></div>
            
 
             <div className='marque' position="relative">

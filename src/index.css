@@ -4,6 +4,7 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: "relative";
 }
 
 
@@ -354,6 +355,25 @@ top: 150px;
   z-index: 50;
 }
 
+.backdrop1 {
+  position: absolute;
+  width: 100vw;
+  height: 160vh;
+  margin-top: -100px;
+  z-index: 50;
+  left: -97vw;
+
+}
+
+.backdrop2 {
+  position: absolute;
+  width: 100vw;
+  height: 180vh;
+  margin-top: -100px;
+  z-index: 50;
+  left: -87vw;
+
+}
 .profile {
 position: absolute;
 z-index: 100;
@@ -366,7 +386,15 @@ z-index: 100;
     font-size: 12px;
     left: 95px;
     top: 50px;
- 
+  ;
+
+   
+}
+
+.profile5{
+  background-color: red;
+  padding: 10px 0px;
+    box-shadow: 0px 25px 15px rgba(11, 11, 12, 0.25)
 }
 
 .profile1 {
@@ -384,6 +412,7 @@ height: 30px;
 .profile1:hover {
   color: #0ec95f;
   background:rgba(255, 255, 255, 0.172) ;
+ 
 }
 
 .profile14 {
@@ -399,7 +428,7 @@ cursor: pointer;
 }
 
 .profile14:hover {
-  color: #0ec95f;
+  color: #0ec95f!important;
   background: rgba(255, 255, 255, 0.172);
 }
 
@@ -415,7 +444,7 @@ gap: 10px;
 }
 
 .profile3 {
-  height: 50px;
+  height: 55px;
 display: flex;
   justify-content: space-between;
   align-items: center;
@@ -465,3 +494,84 @@ font-weight: 500;
   font-size: 11.2px;
 }
 
+
+.profile1-1-1:active {
+  color: white;
+}
+
+.profile1-1-1:hover {
+  color: #0ec95f;
+}
+
+.profile1:hover{
+  color: #0ec95f;
+}
+
+.results {
+  opacity: 0.7;
+}
+.results:hover {
+  opacity: 1;
+}
+
+.load::-webkit-scrollbar {
+  width: 8px;
+  /* Set the width of the scrollbar */
+}
+
+.load::-webkit-scrollbar-thumb-y {
+  background-color: red;
+  /* Set the color of the scrollbar thumb */
+}
+
+.load::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the color of the scrollbar track */
+}
+
+
+.line {
+  width: 2px;
+  height: 120%;
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  bottom: 10;
+  background-color: black;
+  transform: rotate(35deg) translateX(500%);
+  transform-origin: center top;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: start;
+    align-items: center;
+height:32px;
+width: 100%;
+padding-left: 6px;
+background-color: #505161;
+box-shadow: .5px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover {
+background-color: #424652;
+}
+
+.hovered {
+  background-color: #424653!important;
+}
+
+.menu-item1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 32px;
+  width: 100%;
+  padding-left: 6px;
+  background-color: #505161;
+  box-shadow: .5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item1:hover {
+  background-color: #424652;
+}
